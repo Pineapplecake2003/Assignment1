@@ -236,7 +236,9 @@ j       END_IF_ERROR
 IF_ERROR:
 li      t3, 0x0
 END_IF_ERROR:
-
+addi    t0, t0, 4
+addi    t1, t1, 4
+addi    t2, t2, 4
 addi    t5, t5, 0x1         # i++
 blt     t5, t4, MAIN_FOR    # i <= 19
 END_MAIN_FOR:
